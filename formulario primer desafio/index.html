@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario primer desafio</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <section class="section">
+      <div class="section-center">
+        <form action="./thankyou-page" method="post" class="form">
+          <h3 class="form-title">Datos personales</h3>
+          <div class="main-row">
+            <div class="form-row">
+              <label for="name" class="form-label">Nombre completo</label>
+              <input
+                name="name"
+                type="text"
+                id="name"
+                class="form-input"
+                autocomplete="on"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="email" class="form-label">correo electrónico</label>
+              <input
+                name="correo"
+                type="email"
+                id="email"
+                class="form-input"
+                autocomplete="on"
+                required
+              />
+            </div>
+          </div>
+          <div class="main-row">
+            <div class="form-row">
+              <label for="telephone" class="form-label"
+                >Número telefónico</label
+              >
+              <input
+                name="telefono"
+                type="tel"
+                id="telephone"
+                class="form-input"
+                autocomplete="on"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="city" class="form-label">ciudad</label>
+              <input
+                name="ciudad"
+                type="text"
+                id="city"
+                class="form-input"
+                autocomplete="on"
+                required
+              />
+            </div>
+          </div>
+          <div class="main-row">
+            <div class="form-row">
+              <label for="date-of-birth" class="form-label"
+                >fecha de nacimiento</label
+              >
+              <input
+                name="date-of-birth"
+                type="date"
+                id="date-of-birth"
+                class="form-input"
+                autocomplete="on"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="country" class="form-label">pais</label>
+              <input
+                name="pais"
+                type="text"
+                id="country"
+                class="form-input"
+                autocomplete="on"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="message" class="form-label">mensaje</label>
+            <textarea
+              name="message"
+              id="message"
+              class="form-textarea"
+            ></textarea>
+            <div class="btn-container">
+              <button type="submit" class="btn submit-btn">enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
